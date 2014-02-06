@@ -1,0 +1,46 @@
+=at-media($media, $width: 0)
+  @if $media == ipad-landscape
+    @media only screen and (min-width : 1024px) and (max-width: 1200px)
+      @content
+  @else if $media == ipad-portrait
+    @media only screen and (min-width : 768px) and (max-width : 1023px)
+      @content
+  @else if $media == iphone-landscape
+    @media only screen and (min-width : 480px) and (max-width: 767px)
+      @content
+  @else if $media == iphone-portrait
+    @media only screen and (max-width: 568px)
+      @content
+  @else if $media == less-than-ipad-landscape
+    @media only screen and (max-width : 1023px)
+      @content
+  @else if $media == less-than-ipad-portrait
+    @media only screen and (max-width: 767px)
+      @content
+  @else if $media == less-than-iphone-landscape
+    @media only screen and (max-width: 567px)
+      @content
+  @else if $media == less-than-iphone-portrait
+    @media only screen and (max-width: 319px)
+      @content
+  @else if $media == ipad-landscape-and-smaller
+    @media only screen and (max-width: 1024px)
+      @content
+  @else if $media == ipad-portrait-and-smaller
+    @media only screen and (max-width : 768px)
+      @content
+  @else if $media == iphone-landscape-and-smaller
+    @media only screen and (max-width : 568px)
+      @content
+  @else if $media == iphone-portrait-and-smaller
+    @media only screen and (max-width: 320px)
+      @content
+  @else if $media == becomes-navbar
+    @media only screen and (max-width: 735px)
+      @content
+  @else if $media == max
+    @media only screen and (max-width: $width)
+      @content
+  @else if $media == min
+    @media only screen and (min-width: $width)
+      @content

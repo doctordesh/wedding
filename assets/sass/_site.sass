@@ -1,0 +1,80 @@
+html, body
+  height: 100%
+
+body
+  background: $wedding-white
+  color: darken($wedding-green, 20%)
+
+#wrap
+  min-height: 100%
+  height: auto
+  margin: 0 auto -74px
+  padding: 0 0 74px
+
+#footer
+  padding: 20px 0
+  background: $wedding-purple
+  text-align: center
+  color: white
+  p
+    margin: 0
+    padding: 0
+
+.top-bar
+  background: $wedding-purple
+  color: white
+  font-size: 14px
+  padding: 10px 0
+  text-align: center
+  box-shadow: 0 10px 0 rgba(0,0,0,0.1)
+  position: relative
+
+.center
+  text-align: center
+
+.dotted-divider
+  height: 20px
+  margin-top: 30px
+  margin-bottom: 30px
+  &.dotted-white
+    background: url('../images/dot.white.png') repeat-x top center
+    background-size: 20px 10px
+
+.green-wrap
+  color: $wedding-white
+  background-color: $wedding-green 
+  background-image: url('../images/test-bg7.png')
+  background-repeat: repeat-x
+  background-position: center top
+  margin-bottom: 20px
+  padding: 40px 0
+  h1
+    text-align: center
+    font-size: 100px
+    margin: 0
+    +at-media(less-than-ipad-portrait)
+      font-size: 60px
+    +at-media(less-than-iphone-landscape)
+      font-size: 40px
+  h2
+    text-align: center
+    font-size: 50px
+    margin: 0
+    +at-media(less-than-ipad-portrait)
+      font-size: 30px
+
+.dotted-wrap
+  background: url('../images/test-bg.png') no-repeat
+  height: 1000px
+
+
+#login-field
+  width: 328px
+  height: 116px
+  background: url('../images/login-field.png')
+  margin: 10px auto
+  input
+    border: 0
+    text-align: center
+    margin-top: 27px
+
