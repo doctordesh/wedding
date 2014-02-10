@@ -11,8 +11,7 @@ class InviteMember extends \Lannor\Wedding\System\Model
   protected $allergies;
 
   protected $__validate = [
-    'int'  => ['id', 'invite_id'],
-    'bool' => ['accepted']
+    'int'  => ['id', 'invite_id']
   ];
 
   public function __construct() {

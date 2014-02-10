@@ -14,16 +14,25 @@
           id="member-<?= $member->id; ?>-accept"
           type="radio"
           name="invite[members][<?= $member->id; ?>][accepted]"
-          value="1"
-          <?= ($member->accepted ? 'checked="checked"' : ''); ?>
+          value="ACCEPTED"
+          <?= ($member->accepted === 'ACCEPTED' ? 'checked="checked"' : ''); ?>
         />
         <label for="member-<?= $member->id; ?>-decline">Nej</label>
         <input
           id="member-<?= $member->id; ?>-decline"
           type="radio"
           name="invite[members][<?= $member->id; ?>][accepted]"
-          value="0"
-          <?= ($member->accepted ? '' : 'checked="checked"'); ?>
+          value="DECLINED"
+          <?= ($member->accepted === 'DECLINED' ? 'checked="checked"' : ''); ?>
+        />
+
+        <input
+          style="display: none;"
+          id="member-<?= $member->id; ?>-decline"
+          type="radio"
+          name="invite[members][<?= $member->id; ?>][accepted]"
+          value="PENDING"
+          <?= ($member->accepted === 'PENDING' ? 'checked="checked"' : ''); ?>
         />
       </div>
       <div class="col-sm-4">
