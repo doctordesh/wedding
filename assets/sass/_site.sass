@@ -3,7 +3,7 @@ html, body
 
 body
   background: $wedding-white
-  color: darken($wedding-green, 20%)
+  color: $text-body
 
 #wrap
   min-height: 100%
@@ -12,13 +12,15 @@ body
   padding: 0 0 74px
 
 #footer
-  padding: 20px 0
-  background: $wedding-purple
-  text-align: center
-  color: white
-  p
-    margin: 0
-    padding: 0
+  .container
+    width: 410px
+    margin: 100px auto 0 auto
+    padding-bottom: 15px
+    p
+      color: #777
+      text-align: center
+      margin-top: -30px
+
 
 .top-bar
   background: $wedding-purple
@@ -26,8 +28,13 @@ body
   font-size: 14px
   padding: 10px 0
   text-align: center
-  box-shadow: 0 10px 0 rgba(0,0,0,0.1)
+  box-shadow: 0 8px 0 rgba(0,0,0,0.1)
   position: relative
+
+  height: 20px
+  padding: 0
+  //margin-top: -17px
+  display: none
 
 .center
   text-align: center
@@ -39,6 +46,9 @@ body
   &.dotted-white
     background: url('../images/dot.white.png') repeat-x top center
     background-size: 20px 10px
+  &.dotted-gray
+    background: url('../images/dot.gray.png') repeat-x top center
+    background-size: 8px 4px
 
 .green-wrap
   color: $wedding-white
@@ -48,6 +58,8 @@ body
   background-position: center top
   margin-bottom: 20px
   padding: 40px 0
+  border-top: 3px solid $wedding-purple
+  box-shadow: inset 0 10px 0 rgba(0,0,0,0.2)
   h1
     text-align: center
     font-size: 100px

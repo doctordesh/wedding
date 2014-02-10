@@ -3,10 +3,9 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
 @import "fonts";
 @import "variables";
-@import "bootstrap";
+@import "bootstrap_overrides";
 @import "mixins";
 @import "typography";
 @import "site";
