@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"weddin",
+				"wedding-purple"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
 				"res",
 				"resource"
 			],
@@ -116,6 +124,21 @@
 	},
 	"file_history":
 	[
+		"/Users/lannor/Development/wedding/bootstrap.php",
+		"/Users/lannor/Development/wedding/assets/sass/_bootstrap_overrides.sass",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Views/main/index.html.php",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Controllers/SessionsController.php",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Views/wedding/invites/edit.html.php",
+		"/Users/lannor/Development/wedding/invites.sql",
+		"/Users/lannor/Development/wedding/assets/sass/_site.sass",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Views/layouts/wedding.html.php",
+		"/Users/lannor/Development/wedding/assets/javascripts/script.js",
+		"/Users/lannor/Development/wedding/assets/sass/_variables.sass",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Views/wedding/shared/_menu.html.php",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Views/layouts/application.html.php",
+		"/Users/lannor/Development/wedding/assets/sass/_typography.sass",
+		"/Users/lannor/Development/wedding/assets/sass/_mixins.sass",
+		"/Users/lannor/Development/wedding/Lannor/Wedding/Models/InviteMember.php",
 		"/Users/lannor/Development/wedding/index.php",
 		"/Users/lannor/Development/wedding/Lannor/Wedding/ProductsController.php",
 		"/Users/lannor/Development/wedding/Lannor/Wedding/RootController.php",
@@ -228,22 +251,7 @@
 		"/Users/lannor/Development/rocket-phonegap/www/app/socket_events.js",
 		"/Users/lannor/Development/rocket-phonegap/www/app/global/main.html",
 		"/Users/lannor/Development/rocket-phonegap/www/app/modules/friend_request/friend_request_controller.js",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/friend_request/module.js",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/add_group/add_group_controller.js",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/add_group/add_group.html",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/add_friend/add_friend_controller.js",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/add_friend/add_friend.html",
-		"/Users/lannor/Development/rocket-phonegap/www/assets/sass/_app.sass",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/add_friend/module.js",
-		"/Users/lannor/Development/rocket-phonegap/www/bower_components/angular-ui-router/test/stateDirectivesSpec.js",
-		"/Users/lannor/Development/rocket-phonegap/www/bower_components/angular-ui-router/sample/contacts.html",
-		"/Users/lannor/Development/rocket-phonegap/www/app/root_scope.js",
-		"/Users/lannor/Development/rocket-phonegap/www/app/modules/home/main.html",
-		"/Users/lannor/Development/rocket-phonegap/www/app/constants.js",
-		"/Users/lannor/Development/rocket-phonegap/www/app/directives/youtube/youtube.js",
-		"/Users/lannor/Development/rocket-phonegap/www/Gruntfile.js",
-		"/Users/lannor/Development/rocket-phonegap/www/builder.rb",
-		"/Users/lannor/Development/rocket-phonegap/www/index.tpl"
+		"/Users/lannor/Development/rocket-phonegap/www/app/modules/friend_request/module.js"
 	],
 	"find":
 	{
@@ -251,7 +259,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			"-node_modules/, -bower_components/, -vendor/",
@@ -277,6 +285,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"'PENDING'",
+			"INSERT INTO invites",
+			" och ",
+			"login-field",
+			"at-media",
+			"pompiere_regular",
 			"lannor",
 			"  ",
 			"Wedding",
@@ -398,20 +412,17 @@
 			"images-list",
 			"ImageWidgetCache",
 			"console.log(\"Attatch",
-			"console.log",
-			"entry_date",
-			"0.1",
-			"Request for",
-			"td>",
-			"console.log",
-			"delete-entry"
+			"console.log"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
+			"'PENDING';",
+			"\\nINSERT INTO invites",
+			"\\n",
 			" ",
 			"",
 			"validChordsFlat",
@@ -501,6 +512,26 @@
 		"selected_items":
 		[
 			[
+				"_boot",
+				"assets/sass/_bootstrap_overrides.sass"
+			],
+			[
+				"_site",
+				"assets/sass/_site.sass"
+			],
+			[
+				"vari",
+				"assets/sass/_variables.sass"
+			],
+			[
+				"_vari",
+				"assets/sass/_variables.sass"
+			],
+			[
+				"invitemem",
+				"Lannor/Wedding/Models/InviteMember.php"
+			],
+			[
 				"index",
 				"index.html"
 			],
@@ -575,10 +606,6 @@
 			[
 				"gemfil",
 				"Gemfile"
-			],
-			[
-				"_site",
-				"app/assets/stylesheets/_site.sass"
 			],
 			[
 				"users_con",

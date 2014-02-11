@@ -32,6 +32,11 @@
 }
 
 /* line 16, ../sass/_bootstrap_overrides.sass */
+.alert {
+  text-align: center;
+}
+
+/* line 19, ../sass/_bootstrap_overrides.sass */
 * {
   outline: none !important;
 }

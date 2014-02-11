@@ -16,7 +16,8 @@ class SessionsController extends \Lannor\Wedding\System\Controller
       $_SESSION['invite'] = $invite->id;
       $this->redirect('/wedding/invite/' . $invite->id . '/edit');
     } else {
-      var_dump($_SERVER);
+      $this->template = 'main/index';
+      $this->error    = 'Koden du angav hittades inte. Försök igen!';
     }
   }
 

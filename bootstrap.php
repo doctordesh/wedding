@@ -41,7 +41,7 @@ class Util
     $template .= '/' . $method;
 
     $controller->$method($_REQUEST);
-    $controller->template = $template;
+    $controller->template = ($controller->template ?: $template);
     $controller->applicationTemplate();
   }
 

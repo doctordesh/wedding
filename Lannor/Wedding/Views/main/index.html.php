@@ -21,6 +21,9 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <form method="post" action="/sessions">
+        <?php if(isset($this->error)) : ?>
+          <p class="alert alert-danger small"><?= $this->error; ?></p>
+        <?php endif; ?>
         <div id="login-field">
           <input type="text" name="invite[code]" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Din kod" />
         </div>
