@@ -13,6 +13,27 @@
 /* line 1, ../sass/_bootstrap_overrides.sass */
 .navbar {
   margin-bottom: 0;
+  border-radius: 0;
+  background: #fdfffb;
+  border-color: #fdfffb;
+  border-bottom: 3px solid #9c55ba;
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* line 9, ../sass/_bootstrap_overrides.sass */
+.btn-primary {
+  background: #9c55ba;
+  border-color: #b179c9;
+}
+/* line 12, ../sass/_bootstrap_overrides.sass */
+.btn-primary:hover {
+  background: #a464c0;
+  border-color: #ba88cf;
+}
+
+/* line 16, ../sass/_bootstrap_overrides.sass */
+* {
+  outline: none !important;
 }
 
 /* line 1, ../sass/_typography.sass */
@@ -23,7 +44,7 @@ body {
 @media only screen and (max-width: 767px) {
   /* line 1, ../sass/_typography.sass */
   body {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 
@@ -31,6 +52,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "pompiere_regular";
   text-transform: uppercase;
+}
+
+/* line 11, ../sass/_typography.sass */
+label {
+  font-family: "pompiere_regular" !important;
+}
+
+/* line 14, ../sass/_typography.sass */
+h1 {
+  text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  /* line 14, ../sass/_typography.sass */
+  h1 {
+    font-size: 24px;
+  }
 }
 
 /* line 1, ../sass/_site.sass */
@@ -48,60 +85,55 @@ body {
 #wrap {
   min-height: 100%;
   height: auto;
-  margin: 0 auto -74px;
-  padding: 0 0 74px;
+  margin: 0 auto -109px;
+  padding: 0 0 109px;
 }
 
 /* line 15, ../sass/_site.sass */
 #footer .container {
   width: 410px;
-  margin: 100px auto 0 auto;
+  margin: 0 auto 0 auto;
   padding-bottom: 15px;
 }
-/* line 19, ../sass/_site.sass */
+@media only screen and (max-width: 767px) {
+  /* line 15, ../sass/_site.sass */
+  #footer .container {
+    width: 100%;
+  }
+}
+/* line 21, ../sass/_site.sass */
 #footer .container p {
   color: #777777;
   text-align: center;
-  margin-top: -30px;
+}
+/* line 24, ../sass/_site.sass */
+#footer .container .dotted-divider {
+  margin-bottom: 0;
 }
 
-/* line 25, ../sass/_site.sass */
-.top-bar {
-  background: #9c55ba;
-  color: white;
-  font-size: 14px;
-  padding: 10px 0;
-  text-align: center;
-  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
-  position: relative;
-  height: 20px;
-  padding: 0;
-  display: none;
-}
-
-/* line 39, ../sass/_site.sass */
+/* line 27, ../sass/_site.sass */
 .center {
   text-align: center;
 }
 
-/* line 42, ../sass/_site.sass */
+/* line 30, ../sass/_site.sass */
 .dotted-divider {
   height: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
-/* line 46, ../sass/_site.sass */
+/* line 34, ../sass/_site.sass */
 .dotted-divider.dotted-white {
   background: url("../images/dot.white.png") repeat-x top center;
   background-size: 20px 10px;
 }
-/* line 49, ../sass/_site.sass */
+/* line 37, ../sass/_site.sass */
 .dotted-divider.dotted-gray {
   background: url("../images/dot.gray.png") repeat-x top center;
   background-size: 8px 4px;
 }
 
-/* line 53, ../sass/_site.sass */
+/* line 41, ../sass/_site.sass */
 .green-wrap {
   color: #fdfffb;
   background-color: #75af50;
@@ -113,53 +145,96 @@ body {
   border-top: 3px solid #9c55ba;
   box-shadow: inset 0 10px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 63, ../sass/_site.sass */
+/* line 51, ../sass/_site.sass */
+.green-wrap.no-top-style {
+  border-top: 0;
+  box-shadow: none;
+}
+/* line 54, ../sass/_site.sass */
 .green-wrap h1 {
   text-align: center;
   font-size: 100px;
   margin: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 63, ../sass/_site.sass */
+  /* line 54, ../sass/_site.sass */
   .green-wrap h1 {
     font-size: 60px;
   }
 }
 @media only screen and (max-width: 567px) {
-  /* line 63, ../sass/_site.sass */
+  /* line 54, ../sass/_site.sass */
   .green-wrap h1 {
     font-size: 40px;
   }
 }
-/* line 71, ../sass/_site.sass */
+/* line 62, ../sass/_site.sass */
 .green-wrap h2 {
   text-align: center;
   font-size: 50px;
   margin: 0;
 }
 @media only screen and (max-width: 767px) {
-  /* line 71, ../sass/_site.sass */
+  /* line 62, ../sass/_site.sass */
   .green-wrap h2 {
     font-size: 30px;
   }
 }
 
-/* line 78, ../sass/_site.sass */
+/* line 69, ../sass/_site.sass */
 .dotted-wrap {
   background: url("../images/test-bg.png") no-repeat;
   height: 1000px;
 }
 
-/* line 83, ../sass/_site.sass */
+/* line 74, ../sass/_site.sass */
 #login-field {
-  width: 328px;
-  height: 116px;
+  width: 300px;
+  height: 104px;
   background: url("../images/login-field.png");
+  background-size: 100% 100%;
   margin: 10px auto;
 }
-/* line 88, ../sass/_site.sass */
+/* line 80, ../sass/_site.sass */
 #login-field input {
+  width: 100%;
   border: 0;
   text-align: center;
-  margin-top: 27px;
+  margin-top: 25px;
+}
+
+/* line 87, ../sass/_site.sass */
+#accept-invite {
+  margin-bottom: 0.5em;
+}
+/* line 89, ../sass/_site.sass */
+#accept-invite input[type=text] {
+  font-size: 18px;
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 92, ../sass/_site.sass */
+  #accept-invite .control {
+    margin-top: 0.5em;
+  }
+}
+/* line 95, ../sass/_site.sass */
+#accept-invite .btn-group {
+  width: 100%;
+}
+@media only screen and (max-width: 767px) {
+  /* line 97, ../sass/_site.sass */
+  #accept-invite .btn-group button {
+    width: 50%;
+  }
+}
+/* line 100, ../sass/_site.sass */
+#accept-invite .submit-container {
+  margin-top: 0.5em;
+}
+@media only screen and (max-width: 767px) {
+  /* line 102, ../sass/_site.sass */
+  #accept-invite .submit-container input[type=submit] {
+    width: 100%;
+  }
 }

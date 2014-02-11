@@ -1,45 +1,42 @@
-<h1>Detta är din bröllopsanmälan. Vänligen uppdatera!</h1>
+<h1>Här anmäler du dig till bröllopet!</h1>
 <form method="post" action="/wedding/invite/<?= $this->invite->id; ?>">
   <input type="hidden" name="_METHOD" value="PUT" />
 
-  <?php foreach($this->invite->members as $member) : ?>
-    <input type="hidden" name="invite[members][<?= $member->id; ?>][id]" value="<?= $member->id; ?>" />
-    <div class="row">
-      <div class="col-sm-4">
-        <?= $member->name; ?>
+  <div id="accept-invite" class="row">
+    <?php foreach($this->invite->members as $member) : ?>
+      <div class="invite-container">
+        <div class="col-xs-12 col-sm-6">
+          <input type="hidden" name="invite[members][<?= $member->id; ?>][id]" value="<?= $member->id; ?>" />
+          <input style="display: none;" type="text" class="member-status" name="invite[members][<?= $member->id; ?>][accepted]" value="<?= $member->accepted; ?>" />
+          <div class="row">
+            <div class="col-xs-12">
+              <h3><?= $member->name; ?></h3>
+            </div>
+          </div>
+          <div class="row control">
+            <div class="col-xs-12 col-sm-5">
+              <label>Kommer du?</label>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <div class="btn-group">
+                <button type="button" data-value="ACCEPTED"  class="accept btn btn-default">Ja</button>
+                <button type="button" data-value="DECLINED" class="decline btn btn-default">Nej</button>
+              </div>
+            </div>
+          </div>
+          <div class="row control">
+            <div class="col-xs-12 col-sm-5">
+              <label>Ev. allergier</label>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <input type="text" name="invite[members][<?= $member->id; ?>][allergies]" value="<?= $member->allergies; ?>" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4">
-        <label for="member-<?= $member->id; ?>-accept">Ja</label>
-        <input
-          id="member-<?= $member->id; ?>-accept"
-          type="radio"
-          name="invite[members][<?= $member->id; ?>][accepted]"
-          value="ACCEPTED"
-          <?= ($member->accepted === 'ACCEPTED' ? 'checked="checked"' : ''); ?>
-        />
-        <label for="member-<?= $member->id; ?>-decline">Nej</label>
-        <input
-          id="member-<?= $member->id; ?>-decline"
-          type="radio"
-          name="invite[members][<?= $member->id; ?>][accepted]"
-          value="DECLINED"
-          <?= ($member->accepted === 'DECLINED' ? 'checked="checked"' : ''); ?>
-        />
-
-        <input
-          style="display: none;"
-          id="member-<?= $member->id; ?>-decline"
-          type="radio"
-          name="invite[members][<?= $member->id; ?>][accepted]"
-          value="PENDING"
-          <?= ($member->accepted === 'PENDING' ? 'checked="checked"' : ''); ?>
-        />
-      </div>
-      <div class="col-sm-4">
-        <input type="text" name="invite[members][<?= $member->id; ?>][allergies]" value="<?= $member->allergies; ?>" />
-      </div>
-    </div>
-  <?php endforeach; ?>
-
-  <input type="submit" value="Uppdatera din anmälan" />
+    <?php endforeach; ?>
+    <p class="submit-container col-xs-12">
+      <input class="btn btn-primary" type="submit" value="Bekräfta" />
+    </p>
+  </div>
 </form>

@@ -2,8 +2,16 @@ body
   font-weight: 100
   font-size: 24px
   +at-media(less-than-ipad-portrait)
-    font-size: 16px
+    font-size: 20px
 
 h1, h2, h3, h4, h5, h6
   font-family: 'pompiere_regular'
   text-transform: uppercase
+
+label
+  font-family: 'pompiere_regular' !important
+
+h1
+  text-align: center
+  +at-media(less-than-ipad-portrait)
+    font-size: 24px

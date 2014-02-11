@@ -14,16 +14,16 @@
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 center">
       <p>Välkommen till vår bröllopssida. Här kommer du hitta all info du behöver till bröllopet, bra va? Du kommer att kunna tacka ja till inbjudan, anmäla tal, spex eller något annat skoj. Kika in och ha koll på vår önskelista.</p>
-      <p>Just nu är det dock lite tomt, vi kommer att uppdatera inom kort,<br />så kom ihåg att komma tillbaka!</p>
-      <p>Välkommen åter!</p>
+      <p>Fyll i din kod som du fick med ditt inbjudningskort och bekräfta med [enter]</p>
     </div>
   </div>
 
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <form method="post" action="/sessions">
-        <input type="text" name="invite[code]" />
-        <input type="submit" value="Logga in" />
+        <div id="login-field">
+          <input type="text" name="invite[code]" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Din kod" />
+        </div>
       </form>
     </div>
   </div>

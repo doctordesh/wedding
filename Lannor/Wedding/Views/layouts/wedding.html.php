@@ -2,17 +2,15 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
   <title>Josephine &amp; Emil</title>
   <link rel="stylesheet" href="/assets/lib/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/assets/stylesheets/screen.css" />
 </head>
-<body>
+<body style="padding-top: 51px">
   <?= $this->renderPartial('wedding/shared/_menu'); ?>
   <div id="wrap">
-    <!--<div class="top-bar">Josephine &amp; Emil</div>-->
-    <div class="top-bar"></div>
-    <div class="green-wrap">
+    <div class="green-wrap no-top-style">
       <div class="container">
         <h1>Välkommen till<br />vårt bröllop!</h1>
       </div>

@@ -1,2 +1,17 @@
 .navbar
   margin-bottom: 0
+  border-radius: 0
+  background: $wedding-white
+  border-color: $wedding-white  
+  border-bottom: 3px solid $wedding-purple
+  box-shadow: 0 10px 0 rgba(0,0,0,0.2)
+
+.btn-primary
+  background: $wedding-purple
+  border-color: lighten($wedding-purple, 10%)
+  &:hover
+    background: lighten($wedding-purple, 4%)
+    border-color: lighten($wedding-purple, 14%)
+
+*
+  outline: none !important
