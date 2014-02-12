@@ -14,6 +14,7 @@ class InvitesController extends \Lannor\Wedding\Controllers\WeddingController
   public function update($params) {
     $this->invite = Invite::loadByValues($params['invite']);
     if($this->repo->save($this->invite)) {
+      $this->notice('Tack för din anmälan!');
       $this->redirect('/wedding/invite/' . $this->invite->id . '/edit');
     } else {
       $this->template = '/wedding/invites/edit';
