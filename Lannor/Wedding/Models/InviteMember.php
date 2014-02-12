@@ -13,8 +13,4 @@ class InviteMember extends \Lannor\Wedding\System\Model
   protected $__validate = [
     'int'  => ['id', 'invite_id']
   ];
-
-  public function __construct() {
-    $this->validate();
-  }
 }

@@ -14,10 +14,6 @@ class Invite extends \Lannor\Wedding\System\Model
     'int'  => ['id']
   ];
 
-  public function __construct() {
-    $this->validate();
-  }
-
   public static function loadByValues($values) {
     $invite = new Invite();
 

@@ -4,6 +4,11 @@ namespace Lannor\Wedding\System;
 
 class Model extends \Lannor\Base\Model
 {
+  public function __construct() {
+    if(isset($__validate)) {
+      $this->validate();
+    }
+  }
   protected function validate() {
     foreach($this->__validate as $type => $members) {
       foreach($members as $member) {

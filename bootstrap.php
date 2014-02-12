@@ -16,7 +16,8 @@ class Util
       self::$db = new PDO(
         "mysql:host=" . $config->db->host . ";dbname=" . $config->db->name,
         $config->db->user,
-        $config->db->pass
+        $config->db->pass,
+        array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8")
       );
     }
 
