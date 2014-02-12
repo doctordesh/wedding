@@ -25,7 +25,16 @@
           <p class="alert alert-danger small"><?= $this->error; ?></p>
         <?php endif; ?>
         <div id="login-field">
-          <input type="text" name="invite[code]" autocomplete="off" autocorrect="off" autocapitalize="off" placeholder="Din kod" />
+          <input
+            type="text"
+            name="invite[code]"
+            autocomplete="off"
+            autocorrect="off"
+            autocapitalize="off"
+            placeholder="Din kod"
+            onfocus="this.placeholder = ''"
+            onblur="this.placeholder = 'Din kod'"
+          />
         </div>
       </form>
     </div>
