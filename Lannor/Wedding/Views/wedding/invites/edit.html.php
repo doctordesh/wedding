@@ -1,4 +1,7 @@
 <h1>Här anmäler du dig till bröllopet!</h1>
+<?php if($notice = $this->getNotice()) : ?>
+  <p class="alert alert-success small"><?= $notice; ?></p>
+<?php endif; ?>
 <form method="post" action="/wedding/invite/<?= $this->invite->id; ?>">
   <input type="hidden" name="_METHOD" value="PUT" />
 

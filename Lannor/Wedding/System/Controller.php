@@ -45,4 +45,18 @@ class Controller
     ob_end_clean();
     return $html;
   }
+
+  public function notice($message) {
+    $_SESSION['notice'] = $message;
+  }
+
+  public function getNotice() {
+    if(isset($_SESSION['notice'])) {
+      $notice = $_SESSION['notice'];
+      unset($_SESSION['notice']);
+      return $notice;
+    } else {
+      return false;
+    }
+  }
 }
