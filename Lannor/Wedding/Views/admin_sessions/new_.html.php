@@ -13,6 +13,9 @@
           <button class="btn btn-lg btn-primary btn-block" type="submit">Logga in</button>
         </p>
       </form>
+      <p>
+        <a href="/" title="Tillbaka">« Tillbaka</a>
+      </p>
     </div>
   </div>
 </div>
