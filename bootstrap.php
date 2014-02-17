@@ -7,7 +7,7 @@ class Util
 
   public static function createController($name) {
     $controller = "\Lannor\Wedding\Controllers\\" . $name;
-    return new $controller(self::db(), __DIR__ . '/Lannor/Wedding');
+    return new $controller(self::db(), __DIR__ . '/Lannor/Wedding', self::config());
   }
 
   public static function db() {

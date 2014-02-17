@@ -29,4 +29,22 @@ $app->put('/wedding/invite/:id', function($id) {
   Util::route('Wedding\InvitesController', 'update');
 });
 
+
+// Admin
+$app->get('/admin', function() {
+  Util::route('AdminSessionsController', 'new_');
+});
+
+$app->post('/admin', function() {
+  Util::route('AdminSessionsController', 'authenticate');
+});
+
+$app->get('/admin/logout', function() {
+  Util::route('AdminSessionsController', 'destroy');
+});
+
+$app->get('/admin/invites', function() {
+  Util::route('Admin\InvitesController', 'index');
+});
+
 $app->run();

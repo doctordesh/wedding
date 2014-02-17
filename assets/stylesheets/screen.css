@@ -243,3 +243,31 @@ body {
     width: 100%;
   }
 }
+
+/* line 1, ../sass/_admin.sass */
+#wrap.admin {
+  margin-top: 40px;
+}
+/* line 3, ../sass/_admin.sass */
+#wrap.admin table {
+  font-size: 14px;
+  font-family: "Helvetica", "Arial";
+}
+/* line 6, ../sass/_admin.sass */
+#wrap.admin #stats {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 10, ../sass/_admin.sass */
+#wrap.admin #stats div p {
+  padding: 10px;
+  margin: 10px 0;
+}
+/* line 13, ../sass/_admin.sass */
+#wrap.admin #stats div p#stats-accepted {
+  color: green;
+}
+/* line 15, ../sass/_admin.sass */
+#wrap.admin #stats div p#stats-declined {
+  color: red;
+}

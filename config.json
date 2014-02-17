@@ -4,5 +4,9 @@
     "name" : "wedding",
     "user" : "root",
     "pass" : ""
+  },
+  "admin" : {
+    "username" : "admin",
+    "password" : "dabedf61b58a5d8f099cfb57950a7e08b3331857"
   }
 }
