@@ -31,7 +31,6 @@ class Repository
     $sth->setFetchMode(\PDO::FETCH_CLASS, $class_name);
     $sth->execute($values);
     $objects = $sth->fetchAll();
-
     if(!$objects) {
       return false;
     }
@@ -56,6 +55,51 @@ class Repository
     }
 
     return $object;
+  }
+
+  protected function select($sql, $values, $table_name, $class_name) {
+    $sth = $this->db->prepare($sql);
+    $sth->setFetchMode(\PDO::FETCH_CLASS, $class_name);
+    $sth->execute($values);
+    $objects = $sth->fetchAll();
+
+    if(!$objects) {
+      return false;
+    }
+
+    if(!isset($class_name::$has_many)) {
+      return $objects;
+    }
+
+    $primary_ids = [];
+    foreach($objects as $object) {
+      $primary_ids[] = $object->id;
+    }
+
+    foreach($class_name::$has_many as $key => $related_class_name) {
+      $primary_name       = $this->singularize($table_name);
+      $related_table_name = $primary_name . '_' . str_replace($primary_name . '_', '', $key);
+
+      $sql      = "SELECT * FROM " . $related_table_name . " WHERE " . $related_table_name . "." . $primary_name . "_id IN(" . implode(',', $primary_ids) . ")";
+      $children = $this->select($sql, [], $related_table_name, $related_class_name);
+
+      $child_key  = $primary_name . '_id';
+      $object_key = str_replace($primary_name . '_', '', $key);
+      foreach($objects as $object) {
+        $temp = [];
+        foreach($children as $child) {
+          if($child->{$child_key} == $object->id) {
+            if(!isset($object->{$object_key})) {
+              $object->{$object_key} = [];
+            }
+            $temp[] = $child;
+          }
+        }
+        $object->{$object_key} = $temp;
+      }
+    }
+
+    return $objects;
   }
 
   public function save(ToArrayInterface $obj, $table_name = null) {

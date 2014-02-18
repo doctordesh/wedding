@@ -6,13 +6,15 @@ class Controller
 {
   protected $db;
   protected $base_path;
+  protected $config;
 
   public $layout   = 'application';
   public $template = null;
 
-  public function __construct(\PDO $db, $base_path) {
-    $this->db = $db;
+  public function __construct(\PDO $db, $base_path, $config) {
+    $this->db        = $db;
     $this->base_path = $base_path;
+    $this->config    = $config;
 
     if(method_exists($this, 'initialize')) {
       $this->initialize();

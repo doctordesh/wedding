@@ -9,6 +9,7 @@ class InviteMember extends \Lannor\Wedding\System\Model
   protected $name;
   protected $message;
   protected $accepted;
+  protected $message;
   protected $allergies;
 
   protected $__validate = [
