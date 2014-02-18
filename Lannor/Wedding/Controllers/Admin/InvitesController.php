@@ -12,6 +12,7 @@ class InvitesController extends \Lannor\Wedding\Controllers\AdminController
   }
 
   public function index() {
+    $this->user     = $_SESSION['admin'];
     $this->pending  = $this->repo->allByAccepted('PENDING');
     $this->accepted = $this->repo->allByAccepted('ACCEPTED');
     $this->declined = $this->repo->allByAccepted('DECLINED');

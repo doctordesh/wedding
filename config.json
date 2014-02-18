@@ -5,8 +5,14 @@
     "user" : "root",
     "pass" : ""
   },
-  "admin" : {
-    "username" : "admin",
-    "password" : "eae41a57028ada3bcde49aadb50932928718804e"
-  }
+  "users" : [
+    {
+      "username" : "admin",
+      "password" : "eae41a57028ada3bcde49aadb50932928718804e"
+    },
+    {
+      "username" : "superadmin",
+      "password" : "f4f60ff94a662faec282fa4e19bfba4f5b0f6adc"
+    }
+  ]
 }

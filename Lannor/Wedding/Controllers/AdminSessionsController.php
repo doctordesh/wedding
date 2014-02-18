@@ -10,12 +10,19 @@ class AdminSessionsController extends \Lannor\Wedding\System\Controller
 
   public function authenticate($params) {
     $password = sha1($params['password']);
-    if($params['username'] === $this->config->admin->username AND $password === $this->config->admin->password) {
-      $_SESSION['admin'] = 1;
-      $this->redirect('/admin/invites');
-    } else {
-      $this->template = 'admin_sessions/new_';
+    foreach($this->config->users as $user) {
+      if(
+        $user->username === $params['username']
+        AND
+        $user->password === $password
+      ) {
+        $_SESSION['admin'] = $user;
+        $this->redirect('/admin/invites');
+        break;
+      }
     }
+
+    $this->template = 'admin_sessions/new_';
   }
 
   public function destroy() {

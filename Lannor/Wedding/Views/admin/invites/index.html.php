@@ -31,7 +31,9 @@
   <thead>
     <tr>
       <th>Namn</th>
-      <th>Meddelande</th>
+      <?php if($this->user->username == 'superadmin') : ?>
+        <th>Meddelande</th>
+      <?php endif; ?>
       <th>Allergier</th>
     </tr>
   </thead>
@@ -44,7 +46,9 @@
     <?php foreach($this->accepted as $invite_member) : ?>
       <tr>
         <td><?= $invite_member->name; ?></td>
-        <td><?= $invite_member->message; ?></td>
+        <?php if($this->user->username == 'superadmin') : ?>
+          <td><?= $invite_member->message; ?></td>
+        <?php endif; ?>
         <td><?= $invite_member->allergies; ?></td>
       </tr>
     <?php endforeach; ?>
@@ -58,7 +62,9 @@
     <?php foreach($this->declined as $invite_member) : ?>
       <tr>
         <td><?= $invite_member->name; ?></td>
-        <td><?= $invite_member->message; ?></td>
+        <?php if($this->user->username == 'superadmin') : ?>
+          <td><?= $invite_member->message; ?></td>
+        <?php endif; ?>
         <td><?= $invite_member->allergies; ?></td>
       </tr>
     <?php endforeach; ?>
@@ -72,7 +78,9 @@
     <?php foreach($this->pending as $invite_member) : ?>
       <tr>
         <td><?= $invite_member->name; ?></td>
-        <td><?= $invite_member->message; ?></td>
+        <?php if($this->user->username == 'superadmin') : ?>
+          <td><?= $invite_member->message; ?></td>
+        <?php endif; ?>
         <td><?= $invite_member->allergies; ?></td>
       </tr>
     <?php endforeach; ?>
