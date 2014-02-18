@@ -29,6 +29,14 @@
           </div>
           <div class="row control">
             <div class="col-xs-12 col-sm-5">
+              <label>Meddelande</label>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <input type="text" name="invite[members][<?= $member->id; ?>][message]" value="<?= $member->message; ?>" />
+            </div>
+          </div>
+          <div class="row control">
+            <div class="col-xs-12 col-sm-5">
               <label>Ev. allergier</label>
             </div>
             <div class="col-xs-12 col-sm-7">
