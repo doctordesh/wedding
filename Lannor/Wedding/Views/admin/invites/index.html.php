@@ -31,8 +31,8 @@
   <thead>
     <tr>
       <th>Namn</th>
-      <th>Allergier</th>
       <th>Meddelande</th>
+      <th>Allergier</th>
     </tr>
   </thead>
   <thead class="status-header">
