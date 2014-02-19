@@ -12,6 +12,16 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <?php if($this->hasUserLevel(3)) : ?>
+        <ul class="nav navbar-nav navbar-left">
+          <li>
+            <a href="/wedding/invites/<?= $_SESSION['invite']; ?>/edit" title="Din inbjudan">Din inbjudan</a>
+          </li>
+          <li>
+            <a href="/wedding/invites" title="Alla inbjudningar">Alla inbjudningar</a>
+          </li>
+        </ul>
+      <?php endif; ?>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <a href="/logout" title="Logga ut">Logga ut</a>

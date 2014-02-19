@@ -2,7 +2,7 @@
 <?php if($notice = $this->getNotice()) : ?>
   <p class="alert alert-success small"><?= $notice; ?></p>
 <?php endif; ?>
-<form method="post" action="/wedding/invite/<?= $this->invite->id; ?>">
+<form method="post" action="/wedding/invites/<?= $this->invite->id; ?>">
   <input type="hidden" name="_METHOD" value="PUT" />
 
   <div id="accept-invite" class="row">

@@ -13,8 +13,9 @@ class SessionsController extends \Lannor\Wedding\System\Controller
   public function authenticate($params) {
     $invite = $this->repo->findByCode($params['invite']['code']);
     if($invite) {
-      $_SESSION['invite'] = $invite->id;
-      $this->redirect('/wedding/invite/' . $invite->id . '/edit');
+      $_SESSION['invite']     = $invite->id;
+      $_SESSION['user_level'] = $invite->user_level;
+      $this->redirect('/wedding/invites/' . $invite->id . '/edit');
     } else {
       $this->template = 'main/index';
       $this->error    = 'Koden du angav hittades inte. Försök igen!';

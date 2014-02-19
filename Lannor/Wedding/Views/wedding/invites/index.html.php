@@ -1,5 +1,5 @@
 <div class="row">
-  <h1>Inbjudningar</h1>
+  <h1>Alla inbjudningar</h1>
 </div>
 <div id="stats" class="row">
   <div id="stats-total" class="col-xs-12 col-sm-6">
@@ -31,7 +31,7 @@
   <thead>
     <tr>
       <th>Namn</th>
-      <?php if($this->user->username == 'superadmin') : ?>
+      <?php if($this->hasUserLevel(5)) : ?>
         <th>Meddelande</th>
       <?php endif; ?>
       <th>Allergier</th>
@@ -46,7 +46,7 @@
     <?php foreach($this->accepted as $invite_member) : ?>
       <tr>
         <td><?= $invite_member->name; ?></td>
-        <?php if($this->user->username == 'superadmin') : ?>
+        <?php if($this->hasUserLevel(5)) : ?>
           <td><?= $invite_member->message; ?></td>
         <?php endif; ?>
         <td><?= $invite_member->allergies; ?></td>
@@ -62,7 +62,7 @@
     <?php foreach($this->declined as $invite_member) : ?>
       <tr>
         <td><?= $invite_member->name; ?></td>
-        <?php if($this->user->username == 'superadmin') : ?>
+        <?php if($this->hasUserLevel(5)) : ?>
           <td><?= $invite_member->message; ?></td>
         <?php endif; ?>
         <td><?= $invite_member->allergies; ?></td>
@@ -78,7 +78,7 @@
     <?php foreach($this->pending as $invite_member) : ?>
       <tr>
         <td><?= $invite_member->name; ?></td>
-        <?php if($this->user->username == 'superadmin') : ?>
+        <?php if($this->hasUserLevel(5)) : ?>
           <td><?= $invite_member->message; ?></td>
         <?php endif; ?>
         <td><?= $invite_member->allergies; ?></td>

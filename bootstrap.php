@@ -39,8 +39,11 @@ class Util
     }
 
     $template  = self::controllerNameToTemplatePath(str_replace('Controller', '', $controller_name));
+    $name      = str_replace('/', '_', $template);
     $template .= '/' . $method;
 
+    $controller->name = $name;
+    $controller->method = $method;
     $controller->$method($_REQUEST);
     $controller->template = ($controller->template ?: $template);
     $controller->applicationTemplate();

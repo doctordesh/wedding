@@ -19,32 +19,18 @@ $app->get('/logout', function() {
   Util::route('SessionsController', 'destroy');
 });
 
-$app->get('/wedding/invite/:id/edit', function($id) {
+$app->get('/wedding/invites/:id/edit', function($id) {
   $_REQUEST['invite']['id'] = $id;
   Util::route('Wedding\InvitesController', 'edit');
 });
 
-$app->put('/wedding/invite/:id', function($id) {
+$app->get('/wedding/invites', function() {
+  Util::route('Wedding\InvitesController', 'index');
+});
+
+$app->put('/wedding/invites/:id', function($id) {
   $_REQUEST['invite']['id'] = $id;
   Util::route('Wedding\InvitesController', 'update');
-});
-
-
-// Admin
-$app->get('/admin', function() {
-  Util::route('AdminSessionsController', 'new_');
-});
-
-$app->post('/admin', function() {
-  Util::route('AdminSessionsController', 'authenticate');
-});
-
-$app->get('/admin/logout', function() {
-  Util::route('AdminSessionsController', 'destroy');
-});
-
-$app->get('/admin/invites', function() {
-  Util::route('Admin\InvitesController', 'index');
 });
 
 $app->run();

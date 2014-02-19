@@ -8,6 +8,7 @@ class Invite extends \Lannor\Wedding\System\Model
 
   protected $id;
   protected $code;
+  protected $user_level;
   protected $members;
 
   protected $__validate = [
