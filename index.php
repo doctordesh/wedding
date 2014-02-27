@@ -33,4 +33,16 @@ $app->put('/wedding/invites/:id', function($id) {
   Util::route('Wedding\InvitesController', 'update');
 });
 
+$app->get('/wedding/info/wedding', function() {
+  Util::route('Wedding\InfoController', 'wedding');
+});
+
+$app->get('/wedding/info/cakes', function() {
+  Util::route('Wedding\InfoController', 'cakes');
+});
+
+$app->get('/wedding/info/party', function() {
+  Util::route('Wedding\InfoController', 'party');
+});
+
 $app->run();

@@ -1,0 +1,79 @@
+.menu-items
+  .menu-item
+    a
+      display: block
+      span.image, span.image-hover
+        display: block
+        width: 125px
+        height: 175px
+        margin: 0 auto
+        background-size: 100% 100%
+      span.image-hover
+        display: none
+      span.label
+        text-align: center
+        color: black
+
+    &.menu-item
+      width: 20%
+      float: left
+      +at-media(less-than-ipad-portrait)
+        float: none
+        width: 100%
+        a
+          border-bottom: 1px dotted lightgray
+          padding-bottom: 10px
+          padding-top: 10px
+        span.image, span.image-hover
+          float: left
+          width: 50px
+          height: 70px
+        br
+          display: none
+        span.label
+          text-align: left
+          display: block
+          height: 70px
+          line-height: 70px
+          margin-left: 50px + 20px
+
+    &.menu-item a
+      span.image
+        display: block
+      span.image-hover
+        display: none
+      &:hover
+        span.image
+          display: none
+        span.image-hover
+          display: block
+
+    &.menu-item-1 a
+      span.image
+        background-image: url(../images/links/card-1.png)
+      span.image-hover
+        background-image: url(../images/links/card-2.png)
+
+    &.menu-item-2 a
+      span.image
+        background-image: url(../images/links/card-1.png)
+      span.image-hover
+        background-image: url(../images/links/card-2.png)
+
+    &.menu-item-3 a
+      span.image
+        background-image: url(../images/links/cake-1.png)
+      span.image-hover
+        background-image: url(../images/links/cake-2.png)
+
+    &.menu-item-4 a
+      span.image
+        background-image: url(../images/links/glas-1.png)
+      span.image-hover
+        background-image: url(../images/links/glas-2.png)
+
+    &.menu-item-5 a
+      span.image
+        background-image: url(../images/links/card-1.png)
+      span.image-hover
+        background-image: url(../images/links/card-2.png)

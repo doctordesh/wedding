@@ -7,16 +7,13 @@
   <link rel="stylesheet" href="/assets/lib/css/bootstrap.min.css" />
   <link rel="stylesheet" href="/assets/stylesheets/screen.css" />
 </head>
-<body style="padding-top: 51px">
+<body>
   <?= $this->renderPartial('wedding/shared/_menu'); ?>
   <div id="wrap">
     <div class="green-wrap no-top-style">
-      <div class="container">
-        <h1>Välkommen till<br />vårt bröllop!</h1>
-      </div>
       <div class="dotted-divider dotted-white"></div>
       <div class="container">
-        <h2>16 augusti 2014</h2>
+        <h2>Bröllop!</h2>
       </div>
     </div>
     <div class="container">
@@ -29,7 +26,7 @@
   <div id="footer">
     <div class="container">
       <div class="dotted-divider dotted-gray"></div>
-      <p>josephineochemil.se</p>
+      <p>...och så levde de lyckliga!</p>
     </div>
   </div>
 

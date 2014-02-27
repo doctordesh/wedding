@@ -52,7 +52,6 @@ body
     border-top: 0
     box-shadow: none
   h1
-    text-align: center
     font-size: 100px
     margin: 0
     +at-media(less-than-ipad-portrait)
@@ -60,11 +59,12 @@ body
     +at-media(less-than-iphone-landscape)
       font-size: 40px
   h2
-    text-align: center
     font-size: 50px
     margin: 0
     +at-media(less-than-ipad-portrait)
       font-size: 30px
+  h1, h2, h3, h4, h5, h6
+    text-align: center
 
 .dotted-wrap
   background: url('../images/test-bg.png') no-repeat
@@ -102,3 +102,10 @@ body
     input[type=submit]
       +at-media(less-than-ipad-portrait)
         width: 100%
+
+
+.menu-items
+  margin-top: 20px
+  margin-bottom: 70px
+  .menu-item
+    text-align: center

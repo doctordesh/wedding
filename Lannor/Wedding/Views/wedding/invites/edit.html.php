@@ -1,4 +1,5 @@
-<h1>Här anmäler du dig till bröllopet!</h1>
+<?= $this->renderPartial('wedding/shared/_links'); ?>
+<h1 id="content">Här anmäler du dig till bröllopet!</h1>
 <?php if($notice = $this->getNotice()) : ?>
   <p class="alert alert-success small"><?= $notice; ?></p>
 <?php endif; ?>
