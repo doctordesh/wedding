@@ -20,17 +20,14 @@ class InvitesController extends \Lannor\Wedding\Controllers\WeddingController
   }
 
   public function edit($params) {
-    if($params['invite']['id'] != $_SESSION['invite']) {
-      $this->returnToLogin();
-    }
-    $this->invite = $this->invite_repo->find($params['invite']['id']);
+    $this->invite = $this->invite_repo->find($_SESSION['invite']);
   }
 
   public function update($params) {
     $this->invite = Invite::loadByValues($params['invite']);
     if($this->invite_repo->save($this->invite)) {
       $this->notice('Tack för din anmälan!');
-      $this->redirect('/wedding/invites/' . $this->invite->id . '/edit');
+      $this->redirect('/wedding/invites/edit');
     } else {
       $this->template = '/wedding/invites/edit';
     }

@@ -15,7 +15,7 @@
       <?php if($this->hasUserLevel(3)) : ?>
         <ul class="nav navbar-nav navbar-left">
           <li>
-            <a href="/wedding/invites/<?= $_SESSION['invite']; ?>/edit" title="Din inbjudan">Din inbjudan</a>
+            <a href="/wedding/invites/edit" title="Din inbjudan">Din inbjudan</a>
           </li>
           <li>
             <a href="/wedding/invites" title="Alla inbjudningar">Alla inbjudningar</a>

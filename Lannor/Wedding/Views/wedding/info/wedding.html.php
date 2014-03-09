@@ -1,7 +1,9 @@
 <?= $this->renderPartial('wedding/shared/_links'); ?>
-<h1 id="content">Vigsel</h1>
-<p>
-  <figure class="col-xs-4">
-    <img src="http://placeholder.uitest.se/300x300" />
-  </figure>
-</p>
+<h1>Vigsel</h1>
+<div id="content">
+  <div class="row">
+    <div class="col-xs-12 col-sm-4">
+      <div id="gmap"></div>
+    </div>
+  </div>
+</div>

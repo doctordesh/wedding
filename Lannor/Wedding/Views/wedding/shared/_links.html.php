@@ -1,6 +1,6 @@
 <div class="row menu-items">
   <div class="menu-item menu-item-1">
-    <a href="/wedding/invites/<?= $_SESSION['invite']; ?>/edit#content" title="Lorem ipsum">
+    <a href="/wedding/invites/edit#content" title="Lorem ipsum">
       <span class="image"></span>
       <span class="image-hover"></span>
       <br />

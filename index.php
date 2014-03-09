@@ -19,8 +19,7 @@ $app->get('/logout', function() {
   Util::route('SessionsController', 'destroy');
 });
 
-$app->get('/wedding/invites/:id/edit', function($id) {
-  $_REQUEST['invite']['id'] = $id;
+$app->get('/wedding/invites/edit', function() {
   Util::route('Wedding\InvitesController', 'edit');
 });
 
