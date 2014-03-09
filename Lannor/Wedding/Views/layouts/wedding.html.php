@@ -32,6 +32,7 @@
   </div>
 
   <script src="/assets/lib/jquery.min.js" type="application/javascript"></script>
+  <script src="/assets/lib/jquery-ui.min.js" type="application/javascript"></script>
   <script src="/assets/lib/js/bootstrap.min.js" type="application/javascript"></script>
   <script src="/assets/javascripts/script.js" type="application/javascript"></script>
   <script src="/assets/javascripts/maps.js" type="application/javascript"></script>

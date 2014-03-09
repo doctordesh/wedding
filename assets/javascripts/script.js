@@ -9,6 +9,23 @@ var script = {
     $('#accept-invite').find('input.member-status').each(function() {
       self.setActiveButton($(this));
     });
+
+    $('.book-item').on('click', function(e) {
+      var target = $(e.target);
+
+      target.fadeOut(200, function() {
+        target.removeClass('btn-primary');
+        target.addClass('btn-success');
+        target.html('Är du säker?');
+        target.fadeIn(200);
+      });
+    });
+  },
+
+
+
+  bookingButton : function(button) {
+
   },
 
 

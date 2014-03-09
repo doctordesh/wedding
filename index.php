@@ -44,4 +44,8 @@ $app->get('/wedding/info/party', function() {
   Util::route('Wedding\InfoController', 'party');
 });
 
+$app->get('/wedding/wishlist', function() {
+  Util::route('Wedding\WishListController', 'index');
+});
+
 $app->run();

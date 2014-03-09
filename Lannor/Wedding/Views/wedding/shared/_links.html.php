@@ -32,7 +32,7 @@
     </a>
   </div>
   <div class="menu-item menu-item-5">
-    <a href="#content" title="Lorem ipsum">
+    <a href="/wedding/wishlist#content" title="Lorem ipsum">
       <span class="image"></span>
       <span class="image-hover"></span>
       <br />

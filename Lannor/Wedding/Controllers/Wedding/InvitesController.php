@@ -3,10 +3,16 @@
 namespace Lannor\Wedding\Controllers\Wedding;
 
 use Lannor\Wedding\Repos\InviteRepository;
+use Lannor\Wedding\Repos\InviteMemberRepository;
 use Lannor\Wedding\Models\Invite;
 
 class InvitesController extends \Lannor\Wedding\Controllers\WeddingController
 {
+  public function initialize() {
+    $this->invite_repo = new InviteRepository($this->db);
+    $this->member_repo = new InviteMemberRepository($this->db);    
+  }
+
   public function index() {
     $this->pending  = $this->member_repo->allByAccepted('PENDING');
     $this->accepted = $this->member_repo->allByAccepted('ACCEPTED');

@@ -2,17 +2,9 @@
 
 namespace Lannor\Wedding\Controllers;
 
-use Lannor\Wedding\Repos\InviteRepository;
-use Lannor\Wedding\Repos\InviteMemberRepository;
-
 class WeddingController extends \Lannor\Wedding\System\Controller
 {
   public $layout = 'wedding';
-
-  public function initialize() {
-    $this->invite_repo = new InviteRepository($this->db);
-    $this->member_repo = new InviteMemberRepository($this->db);
-  }
 
   public function before() {
     $this->authenticate();
