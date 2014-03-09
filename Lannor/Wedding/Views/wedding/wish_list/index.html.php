@@ -3,7 +3,7 @@
   <div class="row">
     <h1 class="col-xs-12">Önskelista</h1>
 
-    <div class="wish-list-container">
+    <div class="wish-list-container col-xs-12">
       <h2>Ej bokade</h2>
       <div class="row wish-list open">
         <?php foreach($this->open_items as $item) : ?>

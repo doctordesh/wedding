@@ -25,7 +25,7 @@ var script = {
 
 
   bookingButton : function(button) {
-
+    
   },
 
 

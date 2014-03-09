@@ -5,10 +5,10 @@
       <p class="note"><?= $item->note; ?></p>
     <?php endif; ?>
     <p>
+      <button type="submit" class="book-item btn btn-primary">Reservera</button>
       <?php if($item->url) : ?>
         <a class="btn btn-info" href="<?= $item->url; ?>" title="<?= $item->title; ?>" target="_blank">Länk</a>
       <?php endif; ?>
-      <button type="submit" class="book-item btn btn-primary">Reservera</button>
     </p>
   </div>
 </div>
