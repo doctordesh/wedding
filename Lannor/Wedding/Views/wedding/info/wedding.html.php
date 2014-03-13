@@ -4,7 +4,7 @@
     <h1 class="col-xs-12">Vigsel</h1>
     <div class="col-xs-12 col-sm-6">
       <p>
-        Vigseln börjar kl 14.00 och äger rum i Norra Sandby kyrka som 
+        Vigseln börjar kl 14.00 i Norra Sandby kyrka som 
         ligger ungefär 15 minuter utanför Hässleholm. 
       </p>
       <p>

@@ -4,7 +4,7 @@
     <h1 class="col-xs-12">Festen</h1>
     <div class="col-xs-12 col-sm-6">
       <p>
-        Bröllopsfesten kommer äga rum på Näsby Gård. Det tar ungefär en halvtimme att
+        Bröllopsfesten firar vi på Näsby Gård. Det tar ungefär en halvtimme att
         köra med bil från Sockenhuset i Norra Sandby. 
       </p>
       <p>
