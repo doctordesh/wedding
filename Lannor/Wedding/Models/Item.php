@@ -9,6 +9,7 @@ class Item extends \Lannor\Wedding\System\Model
   protected $note;
   protected $url;
   protected $booked;
+  protected $invite_id;
 
   protected $__validate = [
     'int'  => ['id', 'booked']

@@ -64,7 +64,7 @@ class Repository
     $objects = $sth->fetchAll();
 
     if(!$objects) {
-      return false;
+      return [];
     }
 
     if(!isset($class_name::$has_many)) {

@@ -10,7 +10,9 @@ var script = {
       self.setActiveButton($(this));
     });
 
-    $('.book-item').on('click', function(e) {
+    $('.book-item').on('click', function(e) { self.bookItem($(e.target), 1); });
+    $('.regret-item').on('click', function(e) { self.bookItem($(e.target), 0); });
+      /*
       var target = $(e.target);
 
       target.fadeOut(200, function() {
@@ -20,14 +22,31 @@ var script = {
         target.fadeIn(200);
       });
     });
+    */
   },
 
-
-
-  bookingButton : function(button) {
-    
+  bookItem : function(button, booked) {
+    var item_id = button.data('id');
+    $.ajax({
+      url      : '/wedding/wishlist/item/' + item_id + '/edit',
+      data     : { '_METHOD' : 'PUT', item : { booked : booked }},
+      type     : 'POST',
+      dataType : 'json',
+      success  : function(resp) {
+        button.removeClass('booked');
+        button.removeClass('not-booked');
+        button.fadeOut(function() {
+          button.html('Tack!');
+          button.addClass(resp.status);
+          button.fadeIn(function() {
+          });
+        })
+      },
+      error : function(a, b, c) {
+        console.log(a, b, c);
+      }
+    });
   },
-
 
 
   toggleInviteStatus : function(button) {

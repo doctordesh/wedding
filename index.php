@@ -48,4 +48,9 @@ $app->get('/wedding/wishlist', function() {
   Util::route('Wedding\WishListController', 'index');
 });
 
+$app->put('/wedding/wishlist/item/:id/edit', function($id) {
+  $_REQUEST['item']['id'] = $id;
+  Util::route('Wedding\WishListController', 'update');
+});
+
 $app->run();
