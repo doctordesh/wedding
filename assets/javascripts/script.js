@@ -36,7 +36,11 @@ var script = {
         button.removeClass('booked');
         button.removeClass('not-booked');
         button.fadeOut(function() {
-          button.html('Tack!');
+          if(booked) {
+            button.html('Tack!');
+          } else {
+            button.html('OK');
+          }
           button.addClass(resp.status);
           button.fadeIn(function() {
           });

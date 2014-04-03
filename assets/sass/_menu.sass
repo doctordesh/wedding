@@ -5,14 +5,16 @@
       span.image, span.image-hover
         display: block
         width: 125px
-        height: 175px
+        height: 200px
         margin: 0 auto
-        background-size: 100% 100%
+        background-size: 100% 175px
       span.image-hover
         display: none
       span.label
         text-align: center
         color: black
+      &:hover
+        text-decoration: none
 
     &.menu-item
       width: 20%
@@ -29,6 +31,8 @@
           width: 50px
           height: 70px
           margin-left: 10px
+          background-size: 100% 70px
+          background-position: top left !important
         br
           display: none
         span.label
@@ -41,8 +45,10 @@
     &.menu-item a
       span.image
         display: block
+        background-repeat: no-repeat
       span.image-hover
         display: none
+        background-repeat: no-repeat
       &:hover
         span.image
           display: none
@@ -52,14 +58,18 @@
     &.menu-item-1 a
       span.image
         background-image: url(../images/links/asd-1.png)
+        background-position-y: 25px
       span.image-hover
         background-image: url(../images/links/asd-2.png)
+        background-position-y: 25px
 
     &.menu-item-2 a
       span.image
         background-image: url(../images/links/church-1.png)
+        background-position-y: 28px
       span.image-hover
         background-image: url(../images/links/church-2.png)
+        background-position-y: 28px
 
     &.menu-item-3 a
       span.image
@@ -76,5 +86,7 @@
     &.menu-item-5 a
       span.image
         background-image: url(../images/links/present-1.png)
+        background-position-y: 35px
       span.image-hover
         background-image: url(../images/links/present-2.png)
+        background-position-y: 35px

@@ -3,7 +3,6 @@
     <a href="/wedding/invites/edit#content" title="Tacka ja?">
       <span class="image"></span>
       <span class="image-hover"></span>
-      <br />
       <span class="label">Tacka ja?</span>
     </a>
   </div>
@@ -11,7 +10,6 @@
     <a href="/wedding/info/wedding#content" title="Vigsel">
       <span class="image"></span>
       <span class="image-hover"></span>
-      <br />
       <span class="label">Vigsel</span>
     </a>
   </div>
@@ -19,7 +17,6 @@
     <a href="/wedding/info/cakes#content" title="Tårtbuffé">
       <span class="image"></span>
       <span class="image-hover"></span>
-      <br />
       <span class="label">Tårtbuffé</span>
     </a>
   </div>
@@ -27,7 +24,6 @@
     <a href="/wedding/info/party#content" title="Festen">
       <span class="image"></span>
       <span class="image-hover"></span>
-      <br />
       <span class="label">Festen</span>
     </a>
   </div>
@@ -35,7 +31,6 @@
     <a href="/wedding/wishlist#content" title="Önskelista">
       <span class="image"></span>
       <span class="image-hover"></span>
-      <br />
       <span class="label">Önskelista</span>
     </a>
   </div>

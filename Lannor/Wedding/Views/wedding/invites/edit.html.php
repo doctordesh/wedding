@@ -52,3 +52,10 @@
     </p>
   </div>
 </form>
+<div class="row">
+  <div class="col-xs-12">
+    <p class="small">
+      Vi gillar era barn och därför är de välkomna på vigsel och tårta men till festen ser vi att ni lämnar dem hemma!
+    </p>
+  </div>
+</div>
