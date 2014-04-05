@@ -14,7 +14,7 @@
       <p>
         Det finns en del parkeringsplatser precis framför kyrkan. Om du 
         känner att dina ben är friska och orken räcker till finns det 
-        också platser vid Sockenhuset som ligger hundra meter från kyrkan.
+        även platser vid Sockenhuset som ligger hundra meter från kyrkan.
       </p>
       <p>
         Kör du med GPS och vill ha kordinater?

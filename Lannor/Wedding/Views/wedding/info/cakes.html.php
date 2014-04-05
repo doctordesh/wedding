@@ -13,7 +13,7 @@
       </p>
       <p>
         När tårtan är slut och på värdparens signal far ni sen gemensamt vidare 
-        mot vidare festligheter.
+        mot ytterligare festligheter.
       </p>
       <!--
       <br />
