@@ -10,6 +10,11 @@ class InviteMember extends \Lannor\Wedding\System\Model
   protected $message;
   protected $accepted;
   protected $allergies;
+  protected $speech;
+  protected $relation;
+  protected $time;
+  protected $gear;
+  protected $misc;
 
   protected $__validate = [
     'int'  => ['id', 'invite_id']

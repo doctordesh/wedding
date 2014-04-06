@@ -13,7 +13,14 @@
 
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2 center">
-      <p>Välkommen till vår bröllopssida. Här kommer du hitta all info du behöver till bröllopet, bra va? Du kommer att kunna tacka ja till inbjudan, anmäla tal, spex eller något annat skoj. Kika in och ha koll på vår önskelista.</p>
+      <p>
+        Välkommen till vår bröllopssida. Här kommer du hitta all info du behöver
+        till bröllopet, bra va? Du kan tacka ja till din inbjudan, anmäla
+        tal, spex eller något annat skoj. Kika in och ha koll på vår önskelista.
+      </p>
+      <p>
+        Glöm inte att tacka ja innan den 1 maj
+      </p>
       <p>Fyll i din kod som du fick med ditt inbjudningskort och bekräfta med [enter]</p>
     </div>
   </div>

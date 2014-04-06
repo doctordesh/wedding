@@ -87,9 +87,12 @@ body
 
 #accept-invite
   margin-bottom: 0.5em
-  input[type=text]
+  input[type=text], textarea
     font-size: 18px
     width: 100%
+    border-radius: 0
+    border: 1px solid rgb(200,200,200)
+    box-shadow: none
   .control
     +at-media(less-than-ipad-portrait)
       margin-top: 0.5em
@@ -98,11 +101,20 @@ body
     button
       +at-media(less-than-ipad-portrait)
         width: 50%
+      &.active
+        color: white
+        background: #428bca
+        &.accept
+          background: #5cb85c
+        &.decline
+          background: #d9534f
   .submit-container 
     margin-top: 0.5em
     input[type=submit]
       +at-media(less-than-ipad-portrait)
         width: 100%
+  h3
+    font-size: 120%
 
 
 .menu-items

@@ -6,6 +6,14 @@ class WeddingController extends \Lannor\Wedding\System\Controller
 {
   public $layout = 'wedding';
 
+  public $links  = [
+    '/wedding/invites/edit' => 'Tacka ja? Hålla tal?',
+    '/wedding/info/wedding' => 'Vigsel',
+    '/wedding/info/cakes'   => 'Tårtbuffé',
+    '/wedding/info/party'   => 'Festen',
+    '/wedding/wishlist'     => 'Önskelista'
+  ];
+
   public function before() {
     $this->authenticate();
   }

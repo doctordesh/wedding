@@ -4,6 +4,8 @@ namespace Lannor\Wedding\System;
 
 class Controller
 {
+  use \Lannor\Wedding\Helpers\Linker;
+
   protected $db;
   protected $base_path;
   protected $config;
